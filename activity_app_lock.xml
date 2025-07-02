@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:padding="24dp"
+
+    android:gravity="center"
+    android:background="@drawable/kkk">
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAFE PULSE"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#6DB6E4"
+        android:backgroundTint="#00FFFFFF"
+    android:gravity="center"
+    android:paddingBottom="32dp"
+    android:fontFamily="sans-serif-medium" />
+
+
+
+    <!-- PIN Input -->
+    <EditText
+        android:id="@+id/et_pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter PIN"
+        android:inputType="numberPassword"
+        android:textColor="@color/black"
+        android:textColorHint="#DB7587"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:backgroundTint="#EEEEF2"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Unlock Button -->
+    <Button
+        android:id="@+id/btn_unlock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET STARTED"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:backgroundTint="#EB903D"
+
+        android:padding="12dp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Unauthorized Access Detection -->
+
+
+
+</LinearLayout>
