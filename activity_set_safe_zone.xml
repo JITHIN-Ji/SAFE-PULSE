@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/kkk">
+
+    <!-- Centering the form -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:backgroundTint="#01F6F2F0"
+        android:gravity="center"
+
+        android:layout_centerInParent="true"> <!-- Centers the form in the screen -->
+
+        <!-- Latitude Input -->
+        <EditText
+            android:id="@+id/edit_text_latitude"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Latitude"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:minHeight="48dp"
+            android:textColor="#0B0A0A"
+            android:textColorHint="#070707"
+            android:backgroundTint="#0B0B0B"/>
+
+        <!-- Longitude Input -->
+        <EditText
+            android:id="@+id/edit_text_longitude"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Longitude"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:minHeight="48dp"
+            android:textColor="#0B0B0B"
+            android:textColorHint="#050505"
+            android:backgroundTint="#0B0A0A"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Submit Safe Zone Button -->
+        <Button
+            android:id="@+id/btn_submit_safe_zone"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Submit Safe Zone"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#B73DCC"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Start Ride Button (Initially Hidden) -->
+        <Button
+            android:id="@+id/btn_start_ride"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Start Ride"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#EF4C19"
+            android:padding="12dp"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
