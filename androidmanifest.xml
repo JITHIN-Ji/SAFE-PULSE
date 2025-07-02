@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trekking">
+
+    <!-- Required permissions -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+
+    <!-- Optional: Telephony support -->
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Trekking">
+
+        <!-- Launcher Activity -->
+        <activity android:name=".LoginActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Other Activities -->
+        <activity android:name=".RegisterActivity" android:exported="true" />
+        <activity android:name=".MainActivity" android:exported="true" />
+        <activity android:name=".AddLocationActivity" android:exported="false" />
+        <activity android:name=".FallDetectionActivity" android:exported="false" />
+        <activity android:name=".EmergencyContactActivity" android:exported="false" />
+
+        <!-- ✅ Geofence Broadcast Receiver (must be exported for geofencing to work) -->
+        <receiver
+            android:name=".GeofenceReceiver"
+            android:exported="true"
+            android:enabled="true" />
+
+    </application>
+</manifest>
